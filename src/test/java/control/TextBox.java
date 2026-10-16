@@ -11,4 +11,9 @@ public class TextBox extends BaseControl {
         findControl();
         control.sendKeys(text);
     }
+
+    public void clear(){
+        findControl();
+        control.clear();
+    }
 }

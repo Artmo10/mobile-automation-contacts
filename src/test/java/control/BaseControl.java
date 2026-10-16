@@ -44,4 +44,8 @@ public class BaseControl {
             driver.manage().timeouts().implicitlyWait(Session.IMPLICIT_WAIT);
         }
     }
+
+    public boolean isControlPresent(){
+        return !Session.getSession().getDevice().findElements(locator).isEmpty();
+    }
 }
